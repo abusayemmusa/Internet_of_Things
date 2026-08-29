@@ -9,4 +9,37 @@ Basics & Core Language
 ________________________________________________________________________________________________________
 Variables & Data Types(int, float, char)
 ________________________________________________________________________________________________________
+data_type variable_name;           // Declaration
+data_type variable_name = value;   // Declaration with Initialization
+
+int age = 25;       // Integer variable
+float score = 98.5; // Floating-point variable
+char grade = 'A';   // Character variable
+
+----------------------------------------------------------------------------
+#include <stdio.stdio.h>
+
+// Global variable
+int global_count = 10;
+
+void count_function() {
+    // Static local variable
+    static int calls = 0;
+    calls++;
+    printf("Function called %d time(s)\n", calls);
+}
+
+int main() {
+    // Local variable
+    int user_age = 20;
+    
+    printf("Global count: %d\n", global_count);
+    printf("User age: %d\n", user_age);
+    
+    count_function(); // Output: Function called 1 time(s)
+    count_function(); // Output: Function called 2 time(s)
+
+    return 0;
+}
+------------------------------------------------------------------------------
 
