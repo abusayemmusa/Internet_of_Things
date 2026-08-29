@@ -1,1 +1,1 @@
-# Internet_of_Things
+![IoT Circuit Diagram](images/circuit-diagram.png)
