@@ -191,6 +191,27 @@ int main() {
     printf("Step G: Program finished.\n");
     return 0;
 }
+========================================================================================================
+3.Function
+========================================================================================================
 ________________________________________________________________________________________________________
+Function declaration
 ________________________________________________________________________________________________________
+#include <stdio.h>
+
+// 1. FUNCTION DECLARATION (The Blueprint)
+int multiply(int a, int b);
+
+int main() {
+    // 2. FUNCTION CALL (Using the Blueprint)
+    int result = multiply(6, 7);
+    
+    printf("Result: %d\n", result);
+    return 0;
+}
+
+// 3. FUNCTION DEFINITION (The Implementation)
+int multiply(int a, int b) {
+    return a * b;
+}
 ________________________________________________________________________________________________________
