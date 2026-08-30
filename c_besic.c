@@ -163,7 +163,34 @@ int main() {
     return 0;
 }
 ________________________________________________________________________________________________________
+goto statement
 ________________________________________________________________________________________________________
+#include <stdio.h>
+
+int main() {
+    // [A] Start Function
+    int skip = 1; 
+
+    // [B] Execute Statement 1
+    printf("Step B: Initializing program.\n"); 
+
+    // [C] Check Condition for Jump
+    if (skip == 1) {
+        // [D] Execute goto
+        goto MY_LABEL; 
+    }
+
+    // [E] Execute Statement 2 (This gets completely bypassed)
+    printf("Step E: This line will NOT print because of the jump.\n");
+
+    // [F] Named Label marker
+    MY_LABEL: 
+    printf("Step F: Jump successful! Arrived at MY_LABEL.\n");
+
+    // [G] End Function
+    printf("Step G: Program finished.\n");
+    return 0;
+}
 ________________________________________________________________________________________________________
 ________________________________________________________________________________________________________
 ________________________________________________________________________________________________________
